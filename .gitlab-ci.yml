@@ -14,6 +14,9 @@ image: node:latest
 services:
   - node:latest
 
+
+stages:
+  - build
 # This folder is cached between builds
 # https://docs.gitlab.com/ee/ci/yaml/index.html#cache
 cache:
