@@ -1,0 +1,121 @@
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#add{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 1.75rem;
+    
+}
+
+#view{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 1rem;
+}
+
+#view > div{
+    background: #ffffff;
+    margin: 5vh 20vw 5vh 20vw;
+    border-radius: 4rem;
+}
+
+.panel{
+    margin-top: 4vh;
+    z-index: -1;
+    margin-bottom: 2vh;
+    background: #5fadc9;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    border-radius: 2rem;
+    
+}
+
+#view p{
+    text-align: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-top: 0;
+}
+
+input{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+    border: 0.2rem solid #ccc;
+    outline: none;
+}
+
+input:focus{
+    border: 0.2rem solid #555;
+}
+
+textarea{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border-radius: 0.2rem;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+    border: 0.2rem solid #ccc;
+}
+
+textarea:focus{
+    border: 0.2rem solid #555;
+}
+
+#topic{
+    height: 4vh;
+}
+
+#description{
+    height: 6vh;
+    transition: 0.2s;
+}
+
+#description:focus{
+    height: 22vh;
+}
+
+
+label{
+    margin-left: 20vw;
+    text-color: #000000;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+button{
+    margin-top: 0.5rem;
+    margin-left: 60vw;
+    width: 20vw;
+    height: 6vh;
+    background-color: #5fadc9;
+    border-radius: 0.5rem;
+    border-color: #5fadc9;
+    transition: 0.3s;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+button:hover {
+    background: #ccf1ff;
+    border-color: #ccf1ff;
+    width: 22vw;
+}
+
+button:active{
+    border-color: none;
+}

@@ -1,0 +1,48 @@
+*{
+	font-family: "Tahoma", sans-serif;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #4d5b70;
+    position: absolute;
+    display: flex;
+    margin: 0;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 65vh;
+    justify-content: center;
+    font-size: 1.75rem;
+}
+
+.push{
+    width: 30rem;
+    height: 25rem;
+    margin: calc(10vh/2) calc(5vw/2) calc(10vh/2) calc(5vw/2);
+    background: #5fadc9;
+    transition: 0.5s;
+    
+}
+
+.push:hover{
+    background: #ccf1ff;
+    width: 35rem;
+    height: 30rem;
+}
+
+div.push p{
+    padding: 1vh 1vw 1vh 1vw;
+    text-align: center;
+    color: #43305e;
+}
+
+ 
+
