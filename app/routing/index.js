@@ -3,7 +3,7 @@ const app = express()
 const path = require('path')
 const port = 3000
 
-const db = require("../db")
+//const db = require("../db")
 const bodyParser = require('body-parser')
 
 const pages = path.resolve(__dirname + "../../../pages")
@@ -44,7 +44,7 @@ app.get('/res/notification.js', (req,res) => {
 })
 
 
-app.post("/submit/notification", (req,res) => {
+/*app.post("/submit/notification", (req,res) => {
     db.none("INSERT INTO notification(topic, description) VALUES($1, $2);", [req.body.topic, req.body.description])
 	.then(() => {
 	    res.send("Submitted notification")
@@ -53,8 +53,8 @@ app.post("/submit/notification", (req,res) => {
 	    console.log(err)
 	})
 })
-
-app.get("/db/notification", (req,res) => {
+*/
+/*app.get("/db/notification", (req,res) => {
     db.any("SELECT * FROM notification ORDER BY id DESC LIMIT 10")
 	.then(data => {
 	    console.log(data)
@@ -63,7 +63,7 @@ app.get("/db/notification", (req,res) => {
 	.catch(err => {
 	    console.log(err)
 	})
-})
+})*/
 
 
 // app.get('/res/mobi.js', (req,res) => {
